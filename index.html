@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -6,6 +6,7 @@
 body, html {
   height: 100%;
   margin: 0;
+  width: 100%;
 }
 
 .bg {
@@ -15,16 +16,22 @@ body, html {
   /* Full height */
   height: 100%; 
 
+  width: 100%;
+
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  padding-bottom: calc(77vw - 100vh);
+  //padding-right: calc(129vh - 100vw);
 }
 </style>
 </head>
-<body>
+<body style="background-color:#48A24B;">
 
 <div class="bg"></div>
+
+
 
 </body>
 </html>
