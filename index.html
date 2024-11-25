@@ -1,37 +1,259 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+
+<title> Redeemed Exterior Services </title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body, html {
-  height: 100%;
-  margin: 0;
-  width: 100%;
-}
 
-.bg {
-  /* The image used */
-  background-image: url("ad1.jpg");
+  * {	
+      box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-image: url("photos/grassTexture.jpg");
+    background-color: #189219;
+  }
+  
 
-  /* Full height */
-  height: 100%; 
+  .header {
+      padding: 60px;
+      text-align: center;
+      background: #56a9f4;
+      background-image: url("photos/landscapeBackground.jpg");
+      background-size: cover;
+      background-position: top;
+      text-shadow:
+      -1px -1px 0 #000000,
+      1px -1px 0 #000000,
+      -1px 1px 0 #000000,
+      1px 1px 0 #000000;
+      
+  }
+  .header h1 {
+     font-size: 50px;
+     color: white; //#189219;
+  }
+  .header p {
+     font-size: 25px;
+     color: white; //#2bd72c;
+  }
 
-  width: 100%;
+  
+  .services {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f1f1f1;
+    text-align: center;
+    
 
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding-bottom: calc(77vw - 100vh);
-  //padding-right: calc(129vh - 100vw);
-}
+  }
+  .servicesleft {
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: row-reverse;
+     background-color: white;
+     width: 80%;
+     margin-left: auto;
+     margin-right: auto;
+     text-align: center;
+  }
+  
+  .side img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border-radius: 10%;
+    }
+  .side {
+    flex: 40%;
+    background-color: inherit;
+    padding: 20px;
+          
+  }
+  
+  .main {
+    flex: 60%;
+    background-color: inherit;
+    padding: 20px
+    
+  }
+
+  .image{
+    padding:20px;
+  }
+  
+  .footer{
+     text-align: center;
+     width: 80%;
+     margin-left: auto;
+     margin-right: auto;
+     padding: 40px;
+     //background-color: #a1a1a1;
+    color: white;
+    text-shadow:
+    /* Outline */
+    -1px -1px 0 #000000,
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    1px 1px 0 #000000;
+    
+  }
+
+  .footer h1{
+    font-size: 30px;
+  }
+
+  .footer p{
+    font-size: 25px;
+  }
+  
+  
+  }
+
+  @media screen and (max-width: 700px) {
+    .servicesleft {
+      flex-direction: column;
+    }
+    .services {
+      flex-direction: column;
+    }
+
+  }
+
+  @media screen and (max-width: 700px){
+    .services  {
+      flex-direction: column;
+    }
+    .servicesleft  {
+      flex-direction: column;
+    }
+  }
+
 </style>
 </head>
-<body style="background-color:#48A24B;">
+    <body>
+        <div class="header">
+          <h1> Redeemed Exterior Services </h1>
+          <p>Lawn Care, Landscape, Tree Care</p>
+        </div>
 
-<div class="bg"></div>
 
 
+        <div class="services" >
+            <div class="side">
+               
+                <img src="photos/lawnMaintenance.jpg" alt="Lawn Maintenance">
+                
+            </div>
+            <div class="main">
+                <h1> Lawn Maintenance </h1>
+                <p>Mowing, edging, trimming, aeration, and weed removal. We will keep your lawn and outdoor space looking great!</p>
 
-</body>
+
+     
+            </div>
+        </div>
+
+        <div class="servicesleft">
+            <div class="side">
+                 <img src="photos/leafRemoval.jpg" alt="Leaf Removal">
+            </div>
+            <div class="main">
+                <h1>Leaf removal</h1>
+                <p>Let us clear your lawn and gardens as the trees loose their leaves. We offer bagging or mulching to fit your needs</p>
+     
+            </div>
+        </div>
+
+        <div class="services" >
+            <div class="side">
+               
+                <img src="photos/treeTrimming.jpg" alt="Tree Trimming">
+                
+            </div>
+            <div class="main">
+                <h1>Tree trimming</h1>
+                <p>Let us remove unhealthy and unwanted branches from your trees to keep them looking their best, or let us remove your trees as needed</p>
+     
+            </div>
+        </div>
+
+        <div class="servicesleft">
+            <div class="side">
+                 <img src="photos/patiosAndSidewalks.jpg" alt="Patios and Sidewalks">
+            </div>
+            <div class="main">
+                <h1>Patios and sidewalks </h1>
+                <p>Let us create an outdoor space for you to enjoy, or repair and replace failing sidewalks</p>
+     
+            </div>
+        </div>
+
+        <div class="services" >
+            <div class="side">
+               
+                <img src="photos/gutterCleaning.jpg" alt="Gutter Cleaning">
+                
+            </div>
+            <div class="main">
+                <h1>Gutter cleaning</h1>
+                <p>Keeping your gutters clean and water flowing in the right direction will prevent erosion and foundation damage around your house, let us take care of that for you</p>
+     
+            </div>
+        </div>
+
+        <div class="servicesleft">
+            <div class="side">
+                 <img src="photos/waterDiversion.jpg" alt="Water diversion and control">
+            </div>
+            <div class="main">
+                <h1>Water diversion and control</h1>
+                <p>Improper drainage is one of the leading reasons why foundations crack and leak. Let us re-slope the ground around your house and add drainage to keep water away from your foundation</p>
+     
+            </div>
+        </div>
+
+        <div class="services" >
+            <div class="side">
+               
+                <img src="photos/gardenInstalation.jpg" alt="Garden Instalation">
+                
+            </div>
+            <div class="main">
+                <h1>Garden installation </h1>
+                <p> Let us add life to your outdoor space for you and your guests to enjoy together</p>
+     
+            </div>
+        </div>
+
+        <div class="servicesleft" >
+            <div class="side">
+               
+                <img src="photos/employmentServices.jpg" alt="Employment Services">
+                
+            </div>
+            <div class="main">
+                <h1>Employment Services</h1>
+                <p>We seek to employ those in our community with intelectual and developmental disabilities and serve as an example of making space for the often forgotten members of our community to work alongside us</p>
+     
+            </div>
+        </div>
+        
+        <div class="footer">
+            <h1>Contact us today to take care of all your outdoor needs</h1>
+            <p>Redeemedexterior@gmail.com</p>
+            <p>785-639-3656</p>
+        </div>
+       
+        
+        
+    </body>
 </html>
