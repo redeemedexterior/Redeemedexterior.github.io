@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-<title> Redeemed Exterior Services </title>
+<title> Redeemed Exterior Services | Hays, KS</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="format-detection" content="telephone=no">
@@ -22,22 +22,36 @@
   
 
   .header {
+      display: flex;
+      flexwrap: wrap;
       padding: 60px;
       text-align: center;
       background: #56a9f4;
       background-image: url("photos/landscapeBackground.jpg");
       background-size: cover;
       background-position: top;
+      color: white; 
       text-shadow:
       -1px -1px 0 #000000,
       1px -1px 0 #000000,
       -1px 1px 0 #000000,
       1px 1px 0 #000000;
+
+  .headerName {
+    flex: 60%;
+  }
+
+  .headerContact {
+    flex: 40%;
+  }
+  
+  .headerContact h1 {
+    font-size: 40px;
+  }
       
   }
-  .header h1 {
-     font-size: 50px;
-     color: white; //#189219;
+  .headerName h1 {
+     font-size: 60px;
   }
   .header p {
      font-size: 25px;
@@ -130,24 +144,28 @@
     .services {
       flex-direction: column;
     }
-
+    .header {
+      flex-direction: column;
   }
 
-  @media screen and (max-width: 700px){
-    .services  {
-      flex-direction: column;
-    }
-    .servicesleft  {
-      flex-direction: column;
-    }
+
+
   }
 
 </style>
 </head>
     <body>
         <div class="header">
-          <h1> Redeemed Exterior Services </h1>
-          <p>Lawn Care, Landscape, Tree Care</p>
+          <div class="headerName">
+            <h1> Redeemed Exterior Services </h1>
+            <p>Lawn Care, Landscape, Tree Care</p>
+          </div>
+          <div class="headerContact">
+            <h1> Hays, Ks </h1>
+            <p>Ethan Voss</p>
+            <p>785-639-3656</p>
+            <p>redeemedexterior@gmail.com</p>
+          </div>
         </div>
 
 
@@ -251,9 +269,11 @@
      
             </div>
         </div>
+
         
         <div class="footer">
             <h2>Contact us today to take care of all your outdoor needs</h2>
+            <p>Ethan Voss</p>
             <p>Redeemedexterior@gmail.com</p>
             <p>785-639-3656</p>
             <h1>Hays, Kansas</h1>
